@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/IT-Hub-Portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/IT-Hub-Portfolio/assets/vendor-40e976df.js">
     <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/vendor-827d51bf.css">
-    <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/index-bdd5074f.css">
+    <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/index-04a8cacf.css">
   </head>
   <body>
     <header class="header">
@@ -73,8 +73,47 @@
   </div>
 </header>
 
-    
-    <section class="section about">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <title>Hero</title>
+</head>
+<body class="">
+    <section class="section hero-section">
+        <div class="container hero-container">
+            <h1 class="hero-title title">HELLO, I AM <span class="accent">FULLSTACK DEVELOPER</span></h1>
+
+            <picture class="hero-img">
+                <source media="(min-width: 1280px)" srcset="../img/hero/hero-img-desk.jpg 1x, ../img/hero/hero-img-desk@2x.jpg 2x"/>
+                <img src="../img/hero/hero-img-desk.jpg" alt="A picture of me smiling">
+            </picture>
+
+            <div class="hero-text-wrap">
+                <a class="hero-link" href="#work-together">
+                    <svg class="hero-link-icon" width="30" height="30">
+                        <use href="../img/symbol-defs.svg#icon-Arrow-1"></use>
+                    </svg><span class="hero-link-text hero-text">ORDER THE PROJECT</span>
+                </a>
+
+                <p class="hero-text">I WORK FOR PEOPLE ALL OVER THE WORLD TO CREATE <span class="accent">IMPRESSIVE</span> AND <span class="accent">FUNCTIONAL WEBSITES</span> THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.</p>
+            </div>
+        </div>
+        
+        <ul class="hero-socials">
+            <li class="hero-socials-item"><a href="https://www.instagram.com/goitclub/" target="_blank" rel="noreferrer noopener nofollow">Instagram</a></li>
+            <li class="hero-socials-item"><a href="https://www.facebook.com/goITclub/" target="_blank" rel="noreferrer noopener nofollow">Facebook</a></li>
+            <li class="hero-socials-item"><a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank" rel="noreferrer noopener nofollow">LinkedIn</a></li>
+            <li class="hero-socials-item"><a href="https://github.com/Denys-Pronin/IT-Hub-Portfolio" target="_blank" rel="noreferrer noopener nofollow">GitHub</a></li>
+        </ul>
+    </section>
+</body>
+</html>
+
+    <section class="section about" id="about-me">
   <div class="container">
     <h2 class="title about__title">About <span class="accent">me</span></h2>
     <div class="about__bio">
@@ -196,74 +235,90 @@
   </div>
 </section>
 
-    <section id="my-project">
-<div class="container my-project">
-    
-    <h2 class="projects-title">MY 
-    <span>PROJECTS</span>
-</h2>
+    <section id="my-projects">
+  <div class="container my-project">
+    <h2 class="projects-title">
+      MY
+      <span>PROJECTS</span>
+    </h2>
 
-<div class="card">
-   <ul class="project-container" id="project-container">
+    <div class="card">
+      <ul class="project-container" id="project-container">
         <li>
-            <div class="image-wrapper">
-                <img src="../img/my-projects/Rectangle 11.jpg" alt="my-project">
+          <div class="image-wrapper">
+            <img src="../img/my-projects/Rectangle 11.jpg" alt="my-project" />
+          </div>
+          <div class="text-container">
+            <p class="stack-teh">React, JavaScript, Node JS, Git</p>
+            <div class="text-button">
+              <h3 class="name-project">Wallet webservice</h3>
+              <div class="link-container">
+                <a
+                  target="_blank"
+                  class="link-project"
+                  href="https://github.com/Denys-Pronin/IT-Hub-Portfolio"
+                  >VISIT
+                  <svg stroke="#00B068" width="24" height="24">
+                    <use href="../img/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="text-container">
-                <p class="stack-teh">React, JavaScript, Node JS, Git</p>
-                <div class="text-button">
-                <h3 class="name-project">Wallet webservice</h3>
-                <div class="link-container">
-                    <a  target="_blank" class="link-project" href="https://github.com/Denys-Pronin/IT-Hub-Portfolio">VISIT
-                        <svg stroke="#00B068" width="24" height="24"><use href="../img/symbol-defs.svg#icon-vector"></use></svg>
-                    </a>
-                </div>
-                </div>
-            </div>
+          </div>
         </li>
 
         <li>
-            <div class="image-wrapper">
-                <img src="../img/my-projects/Rectangle 9.jpg" alt="my-project">
+          <div class="image-wrapper">
+            <img src="../img/my-projects/Rectangle 9.jpg" alt="my-project" />
+          </div>
+          <div class="text-container">
+            <p class="stack-teh">React, JavaScript, Node JS, Git</p>
+            <div class="text-button">
+              <h3 class="name-project">Green harvest webservice</h3>
+              <div class="link-container">
+                <a
+                  target="_blank"
+                  class="link-project"
+                  href="https://github.com/Denys-Pronin/IT-Hub-Portfolio"
+                  >VISIT
+                  <svg stroke="#00B068" width="24" height="24">
+                    <use href="../img/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="text-container">
-                <p class="stack-teh">React, JavaScript, Node JS, Git</p>
-                <div class="text-button">
-                <h3 class="name-project">Green harvest webservice</h3>
-                <div class="link-container">
-                    <a  target="_blank" class="link-project" href="https://github.com/Denys-Pronin/IT-Hub-Portfolio">VISIT
-                        <svg stroke="#00B068" width="24" height="24"><use href="../img/symbol-defs.svg#icon-vector"></use></svg>
-                    </a>
-                </div>
-                </div>
-            </div>
+          </div>
         </li>
-    
+
         <li>
-            <div class="image-wrapper">
-                <img src="../img/my-projects/Rectangle 12.jpg" alt="my-project">
+          <div class="image-wrapper">
+            <img src="../img/my-projects/Rectangle 12.jpg" alt="my-project" />
+          </div>
+          <div class="text-container">
+            <p class="stack-teh">React, JavaScript, Node JS, Git</p>
+            <div class="text-button">
+              <h3 class="name-project">English Exellence website</h3>
+              <div class="link-container">
+                <a
+                  target="_blank"
+                  class="link-project"
+                  href="https://github.com/Denys-Pronin/IT-Hub-Portfolio"
+                  >VISIT
+                  <svg stroke="#00B068" width="24" height="24">
+                    <use href="../img/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="text-container">
-                <p class="stack-teh">React, JavaScript, Node JS, Git</p>
-                <div class="text-button">
-                <h3 class="name-project">English Exellence website</h3>
-                <div class="link-container">
-                    <a  target="_blank" class="link-project" href="https://github.com/Denys-Pronin/IT-Hub-Portfolio">VISIT
-                        <svg stroke="#00B068" width="24" height="24"><use href="../img/symbol-defs.svg#icon-vector"></use></svg>
-                    </a>
-                </div>
-                </div>
-            </div>
+          </div>
         </li>
-    </ul>
+      </ul>
+    </div>
 
-
-</div>
-
-<button id="load-more-button" class="load-more">LOAD MORE</button>
-
-</div>
+    <button id="load-more-button" class="load-more">LOAD MORE</button>
+  </div>
 </section>
+
     <section class="section benefits" id="benefits-section">
   <div class="container">
     <h2 class="title benefits-title">
@@ -569,7 +624,7 @@
     <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
-      <a href="#header" class="title footer__logo">
+      <a href="index.html" class="title footer__logo">
         Lloyd<span class="accent">Jefferson.</span>
       </a>
       <ul class="footer__list">
@@ -614,12 +669,6 @@
 </footer>
 
 
-    <!-- <script type="module" src="./js/main.js"></script> -->
-    
-    
-    
-    
-    
     
     
     
