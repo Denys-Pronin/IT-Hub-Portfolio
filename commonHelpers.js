@@ -9,12 +9,12 @@ import{A,S as I,i as p,a as j}from"./assets/vendor-40e976df.js";(function(){cons
                 <h3 class="name-project">${f.name}</h3>
                 <div class="link-container">
                     <a  target="_blank" class="link-project" href="https://github.com/Denys-Pronin/IT-Hub-Portfolio">VISIT
-                        <svg stroke="#00B068" width="24" height="24"><use href="../img/symbol-defs.svg#icon-vector"></use></svg>
+                        <svg stroke="#00B068" width="24" height="24"><use href="./img/symbol-defs.svg#icon-vector"></use></svg>
                     </a>
                 </div>
                 </div>
             </div>
-       
+
 
 `,s.appendChild(L)}),r+=t,r>=e.length&&(n.style.display="none")}n.addEventListener("click",o),o()});const B=document.querySelector(".faq-list"),D=document.querySelectorAll(".ac");new A(B,{openOnInit:[0],collapse:!0,duration:400,showMultiple:!1,beforeOpen:function(e){e.previousElementSibling&&e.previousElementSibling.classList.add("no-border-bottom"),e.classList.add("no-border-bottom")},beforeClose:function(){D.forEach(e=>{e.classList.remove("no-border-bottom")})}});const h=document.querySelector(".mySwiper"),c=document.querySelector(".s-button-next"),d=document.querySelector(".s-button-prev"),P=()=>{p.error({title:"Error",message:"Sorry, there are problems on the server",position:"topRight",timeout:3e3})};async function J(){return(await j.get("https://portfolio-js.b.goit.study/api/reviews")).data}async function N(){try{let s=function(t){const o=t.map(a=>`<li class="swiper-item swiper-slide">
             <p class="text-review">${a.review}</p>
