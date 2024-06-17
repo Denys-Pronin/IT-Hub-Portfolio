@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/IT-Hub-Portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/IT-Hub-Portfolio/assets/vendor-40e976df.js">
     <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/vendor-827d51bf.css">
-    <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/index-d4456677.css">
+    <link rel="stylesheet" href="/IT-Hub-Portfolio/assets/index-41f62120.css">
   </head>
   <body>
     <header class="header">
@@ -74,7 +74,84 @@
 </header>
 
     
-    
+    <section class="section about">
+  <div class="container">
+    <h2 class="title about__title">About <span class="accent">me</span></h2>
+    <div class="about__bio">
+      <!-- <img src="./img/about-me/about-mobile.webp" alt="me" class="about__img" /> -->
+      <picture class="about__img">
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="/IT-Hub-Portfolio/assets/about-b9621019.webp 1x, /IT-Hub-Portfolio/assets/about@2x-633c29c7.webp 2x"
+          type="image/webp"
+        />
+
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/IT-Hub-Portfolio/assets/about-tablet-23e9fb89.webp 1x, /IT-Hub-Portfolio/assets/about-tablet@2x-a1698ec5.webp 2x"
+          type="image/webp"
+        />
+
+        <!-- Mobile screen -->
+
+        <source
+          media="(max-width: 767px)"
+          srcset="/IT-Hub-Portfolio/assets/about-mobile-26b3948f.webp 1x, /IT-Hub-Portfolio/assets/about-mobile@2x-507d0e0e.webp 2x"
+          type="image/webp"
+        />
+        <img src="/IT-Hub-Portfolio/assets/about-b9621019.webp" alt="s" loading="lazy" />
+      </picture>
+      <div class="about__descr">
+        <h3 class="about__subtitle">BIO</h3>
+        <p class="about__text">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="about__text">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="about__wrapper">
+      <div>
+        <h3 class="about__subtitle">EDUCATION</h3>
+        <ul class="about__list">
+          <li class="about__list-item">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="about__list-item">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="about__list-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="about__subtitle">ROLE</h3>
+        <ul class="about__list">
+          <li class="about__list-item">Frontend development</li>
+          <li class="about__list-item">HeadlessCMS, Wordpress</li>
+          <li class="about__list-item">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section class="section tech-skill_section">
   <h2 class="tech-skill-hide">Tech Skills</h2>
   <div class="marquee">
@@ -120,7 +197,7 @@
 </section>
 
     
-    <section class="section" id="benefits-section">
+    <section class="section benefits" id="benefits-section">
   <div class="container">
     <h2 class="title benefits-title">
       <span class="accent">benefits</span> of working with me
