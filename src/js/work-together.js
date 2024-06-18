@@ -50,9 +50,10 @@ form.addEventListener('submit', async event => {
   const commentValue = document.querySelector('.work-together-comment').value;
 
   if (!emailValue || !commentValue) {
-    iziToast.error({
-      title: 'Error',
+    iziToast.warning({
+      title: 'Attention',
       message: 'All fields are required.',
+      position: 'topCenter',
     });
     return;
   }
