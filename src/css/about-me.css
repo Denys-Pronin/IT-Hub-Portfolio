@@ -64,11 +64,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about {
-    background-image: url('../img/decor_bg2.png');
-    background-size: 380px 260px;
-    background-repeat: no-repeat;
-    background-position: bottom 196px right 20px;
+  .about .container {
+    background: url('../img/decor_bg2.png') no-repeat;
+    background-position: right top;
+    background-size: 336px 252px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about .container {
+      background: url('../img/about-me/decor_bg2x.png') no-repeat;
+      background-position: right 32px bottom 156px;
+      background-size: 336px 252px;
+    }
   }
   .about__bio {
     flex-direction: row;
@@ -93,8 +101,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about {
-    background-position: bottom 348px right 20px;
+  .about .container {
+    background-position: right 32px bottom 264px;
   }
   .about__bio {
     min-height: 720px;
