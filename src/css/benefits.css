@@ -44,12 +44,19 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .benefits {
-    background-image: url('../img/benefits/png/decor_bg_3@2x.png');
-    background-size: 581px 382px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: top right -30px;
+  .benefits .container {
+    background: url('../img/decor-bg-3.png') no-repeat;
+    background-position: right 32px top -110px;
+    background-size: 526px 408px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits .container {
+      background: url('../img/decor-bg-3.png') no-repeat;
+      background-position: right 32px top -110px;
+      background-size: 526px 408px;
+    }
   }
   .benefits-title {
     width: 682px;

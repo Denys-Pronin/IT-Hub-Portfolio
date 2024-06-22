@@ -1,16 +1,17 @@
-.hero-section {
+.hero-section .container {
   overflow: hidden;
   padding-top: 112px;
-  background-image: url(../img/hero/decor-mob.png);
-  background-repeat: no-repeat;
-  background-position: 55% 5.5%;
-  background-size: 320px 704px;
+  background: url('../img/hero/decor-mob@1x.png') no-repeat;
+  background-position: right 32px top;
+  background-size: 100% 100%;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: url(../img/hero/decor-mob@2x.png);
+  .hero-section .container {
+    background: url('../img/hero/decor-mob@2x.png') no-repeat;
+    background-position: right 32px top;
+    background-size: 100% 100%;
   }
 }
 
@@ -123,21 +124,23 @@ body.dark .hero-link:hover:after {
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 88px;
-    background-image: url(../img/hero/lower-decor-tab.png),
-      url(../img/hero/upper-decor-tab.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 50% 73.5%, 93% 2.5%;
-    background-size: 356px 276px, 356px 276px;
+  }
+  .hero-section .container {
+    overflow: hidden;
+    padding-top: 112px;
+    background: url('../img/hero/decor-tablet@1x.png') no-repeat;
+    background-position: right 32px top;
+    background-size: 100% 100%;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-section {
-      background-image: url(../img/hero/lower-decor-tab@2x.png),
-        url(../img/hero/upper-decor-tab@2x.png);
+    .hero-section .container {
+      background: url('../img/hero/decor-tablet@2x.png') no-repeat;
+      background-position: right 32px top;
+      background-size: 100% 100%;
     }
   }
-
   .hero-title {
     font-size: 136px;
     line-height: 156px;
@@ -174,10 +177,22 @@ body.dark .hero-link:hover:after {
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-section {
+  .hero-section .container {
     padding-top: 184px;
-    background-position: 24% 70.5%, 97% 3%;
-    background-size: 356px 276px, 356px 276px;
+    background: url('../img/hero/uppre_decor_desk@1x.png') no-repeat right 32px
+        top / 356px 276px,
+      url('../img/hero/lower_decor_desk@1x.png') no-repeat left 110px bottom
+        50px / 356px 276px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section .container {
+      background: url('../img/hero/uppre_decor_desk@2x.png') no-repeat right
+          32px top / 356px 276px,
+        url('../img/hero/lower_decor_desk@2x.png') no-repeat left 110px bottom
+          50px / 356px 276px;
+    }
   }
 
   .hero-title {
@@ -186,6 +201,8 @@ body.dark .hero-link:hover:after {
 
   .hero-img {
     display: block;
+    position: relative;
+    top: -365px;
   }
 
   .hero-text-wrap {

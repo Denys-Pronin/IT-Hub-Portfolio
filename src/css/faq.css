@@ -127,7 +127,7 @@
   .faq .container {
     column-gap: 104px;
     background: url('../img/faq/decorBg1x.png') no-repeat;
-    background-position: left bottom;
+    background-position: left 32px bottom;
     background-size: 526px 408px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -135,7 +135,7 @@
     (min-resolution: 2dppx) {
     .faq .container {
       background: url('../img/faq/decorBg2x.png') no-repeat;
-      background-position: left bottom;
+      background-position: left 32px bottom;
       background-size: 526px 408px;
     }
   }
